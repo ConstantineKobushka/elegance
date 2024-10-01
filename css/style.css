@@ -1,0 +1,455 @@
+html {
+  box-sizing: border-box;
+  line-height: 0;
+  scroll-behavior: smooth;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.text-description {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+body {
+  color: #000;
+  font-weight: 400;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.nav__list {
+  display: flex;
+  margin-left: 83px;
+  margin-right: auto;
+}
+.nav__item + .nav__item {
+  margin-left: 30px;
+}
+.nav__link {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  transition: all 0.3s;
+}
+.nav__link:hover {
+  color: #f72464;
+}
+.nav__btn {
+  width: 30px;
+  display: none;
+}
+.nav__btn-item {
+  height: 2px;
+  background-color: #000;
+}
+.nav__btn-item + .nav__btn-item {
+  margin-top: 5px;
+}
+.header__cart {
+  position: relative;
+}
+.header__cart-link {
+  padding: 5px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.header__cart-number {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f72464;
+  border-radius: 50%;
+  top: -3px;
+  right: -2px;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.top {
+  margin-bottom: 60px;
+}
+.top__row {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.top__content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 670px;
+  transform: translateY(-50%);
+}
+.top__title {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  line-height: 96px;
+  margin-bottom: 20px;
+}
+.top__text {
+  width: 599px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 60px;
+}
+.button {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  line-height: 35px;
+  background-color: #f72464;
+  border-radius: 4px;
+  padding: 5px 33px 11px 33px;
+  color: #fff;
+  display: inline-block;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+.button:hover {
+  box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+  border: 2px solid #f72464;
+  background-color: transparent;
+  color: #f72464;
+}
+.top__photo img {
+  width: 100%;
+}
+
+.new-products {
+  margin-bottom: 70px;
+}
+.new-products__header-title {
+  margin-bottom: 10px;
+}
+.new-products__header-description {
+  margin-bottom: 40px;
+}
+.new-products__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.new-products__item {
+  max-width: 270px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in;
+}
+.new-products__item:hover {
+  border: 1px solid #f72464;
+}
+.new-products__link {
+  display: inline-block;
+}
+.new-poroducts__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.new-poroducts__title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 12px;
+}
+.new-poroducts__price {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+.new-poroducts__price-old {
+  color: #999999;
+  margin-right: 10px;
+}
+.new-poroducts__price-new {
+  font-weight: 700;
+  color: #f72464;
+}
+.new-products__btn {
+  text-align: center;
+}
+.btn {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f72464;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 10px 40px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.btn:hover {
+  border: 2px solid #f72464;
+  background-color: #ffffff;
+  color: #f72464;
+  box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+}
+
+.banner {
+  margin: 0 auto 70px;
+  text-align: center;
+}
+.banner__link {
+  display: inline-block;
+}
+.banner__link img {
+  width: 100%;
+}
+
+.blog {
+  margin-bottom: 90px;
+}
+.blog__header-title {
+  margin-bottom: 10px;
+}
+.blog__header-description {
+  margin-bottom: 86px;
+}
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+.blog__items {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.blog__content {
+  width: 370px;
+}
+.blog__content-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 10px;
+  padding-top: 16px;
+}
+.blog__content-text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  color: #777777;
+  margin-bottom: 10px;
+}
+.blog__content-link {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 21px;
+  display: inline-block;
+  position: relative;
+  padding-right: 24px;
+  transition: all 0.3s;
+}
+.blog__content-link::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/arrow-more.svg);
+  right: 0;
+  top: 5px;
+  width: 8px;
+  height: 14px;
+}
+.blog__content-link:hover {
+  color: #f72464;
+}
+.blog__btn {
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.form__title {
+  margin-bottom: 20px;
+}
+.form__text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  max-width: 630px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.form__input {
+  margin-right: 10px;
+  border: 2px solid #f72464;
+  border-radius: 4px;
+  width: 229px;
+  height: 42px;
+  padding: 0px 10px;
+}
+.form__input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+}
+.form__input:focus {
+  box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+  outline: none;
+}
+.form__button {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #f72464;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #fff;
+  width: 134px;
+  height: 42px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.form__button:hover {
+  color: #f72464;
+  background-color: #fff;
+  border: 2px solid #f72464;
+  box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+}
+
+.footer {
+  background-color: #000;
+  padding: 30px 0;
+  text-align: center;
+}
+.footer__contact {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.footer__contact-item {
+  display: inline-block;
+}
+.footer__contact-link {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s;
+}
+.footer__contact-link:hover {
+  color: #f72464;
+}
+.footer__sosial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 195px;
+  margin: 0 auto 25px;
+}
+.footer__sosial-item {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.footer__sosial-facebook::after,
+.footer__sosial-twitter::after,
+.footer__sosial-instagram::after,
+.footer__sosial-vector::after {
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.footer__sosial-facebook::after {
+  background-image: url(../images/facebook.svg);
+}
+.footer__sosial-twitter::after {
+  background-image: url(../images/twitter.svg);
+}
+.footer__sosial-instagram::after {
+  background-image: url(../images/instagram.svg);
+}
+.footer__sosial-vector::after {
+  background-image: url(../images/vector.svg);
+}
+.footer__autor {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #999999;
+}
+.footer__sosial-facebook:hover::after {
+  background-image: url(../images/facebook-pink.svg);
+}
+.footer__sosial-twitter:hover::after {
+  background-image: url(../images/twitter-pink.svg);
+}
+.footer__sosial-instagram:hover::after {
+  background-image: url(../images/instagram-pink.svg);
+}
+.footer__sosial-vector:hover::after {
+  background-image: url(../images/vector-pink.svg);
+}
